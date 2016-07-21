@@ -1,3 +1,19 @@
 body {
 	background: url("../img/tunes_background.png"); 
 }
+
+.player-1,
+.player-2 {
+	display: inline-flex;
+	flex-direction: column;
+	width: 25%;
+}
+
+.battleground {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+

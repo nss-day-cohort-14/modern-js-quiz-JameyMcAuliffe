@@ -18,3 +18,11 @@ describe('specs for Brain', function() {
 	});
 });
 
+describe('specs for Gogo', function() {
+	let testGogo = new Wildcard.GogoDodo();
+	console.log('testGogo', testGogo);
+	it('should behave...Gogo is defined', function() {
+		expect(testGogo).toBeDefined();
+	});
+});
+

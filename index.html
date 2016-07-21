@@ -8,21 +8,28 @@
 	<link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-	<div class="battleground">
-		<select class="select-1">
-			<option disabled="true" selected="true">Tiny Toons</option>
-			<option>Buster Bunny</option>
-			<option>Babs Bunny</option>
-			<option>Plucky Duck</option>
-		</select>	
-		<select class="select-2">
-			<option disabled="true" selected="true">Animaniacs</option>
-			<option>Yacko</option>
-			<option>Wacko</option>
-			<option>Dot</option>
-			<option>Pinky</option>
-			<option>The Brain</option>
-		</select>
+	<div class="battleground" id="battleground">
+		<div class="player-1" id="player-1">
+			<input type="text" class="input-1" id="input-1" placeholder="Give your fighter a nickname...">
+			<select class="select-1" id="select-1">
+				<option disabled="true" selected="true">Tiny Toons</option>
+				<option>Buster Bunny</option>
+				<option>Babs Bunny</option>
+				<option>Plucky Duck</option>
+				<option>Gogo Dodo</option>
+			</select>	
+		</div>
+		<div class="player-2" id="player-2">
+			<input type="text" class="input-2" id="input-2" placeholder="Give your fighter a nickname...">
+			<select class="select-2" id="select-2">
+				<option disabled="true" selected="true">Animaniacs</option>
+				<option>Yacko</option>
+				<option>Wacko</option>
+				<option>Dot</option>
+				<option>Pinky</option>
+				<option>The Brain</option>
+			</select>
+		</div>
 	</div>
 	<script src="dist/bundle.js"></script> 
 </body>
