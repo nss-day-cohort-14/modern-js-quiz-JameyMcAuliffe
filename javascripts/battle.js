@@ -1,14 +1,11 @@
 "use strict";
 
-
-const battle = function() {
-
-
-	$(".select-btn-1").on("click", function() {
-		let fighter = $("#select-1").val();
-		console.log(fighter);
-	});
+const Battle = function() {
+	
+	function getDamage() {
+		$(".attack-btn").on("click", function() {
+			this.damage
+		})
+	}
 
 };
-
-module.exports = battle;

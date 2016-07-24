@@ -22,6 +22,16 @@ body {
 	color: white;
 }
 
+.attack {
+	display: flex;
+	justify-content: center;
+	padding-top: 100px;
+}
+
+.attack-btn {
+	width: 100px;
+}
+
 
 
 
