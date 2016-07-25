@@ -28,6 +28,7 @@ $(function() {
 		$(".player-2-name").html(fighter2);
 		let fighter2Id = $("#select-2").children("option:selected").attr("class");
 		Battle.animaniac = Lists.AnimaniacsList[fighter2Id];
+		console.log(Battle.animaniac);
 	});
 
 	//player 1 nickname event
@@ -45,9 +46,8 @@ $(function() {
 	//attack event
 	$(".attack-btn").on("click", function() {
 		battle = new Battle();
-		console.log("attack");
-		let results = battle.fight(Battle.tinyToon, Battle.animaniac);
-		console.log(results);
+		console.log("tinyToon damage:", battle.getDamage(Battle.tinyToon));
+		console.log("animaniac damage:", battle.getDamage(Battle.animaniac));
 	});
 
 });

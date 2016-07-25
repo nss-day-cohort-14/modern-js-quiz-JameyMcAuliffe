@@ -3,17 +3,15 @@
 
 const Battle = function() {
 
-	this.tinyToon = null;
-	this.animaniac = null;
-
-	this.getDamage = function(num1, num2) {
-		return Math.floor(Math.random() * num1) + num2;
+	this.getDamage = function(character) {
+		//returns a random damage amount based off the num1/num2 values of the chosen fighters
+		return Math.floor(Math.random() * character.num1) + character.num2;
 	};
 
 	this.fight = function(tinyToon, animaniac) {
-		this.tinyToon.getDamage(tinyToon.num1, tinyToon.num2);
-		this.animaniac.getDamage(animaniac.num1, animaniac.num2);
-
+		
+		
+		
 	};
 
 };
