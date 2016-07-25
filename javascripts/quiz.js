@@ -46,16 +46,17 @@ $(function() {
 	//attack event
 	$(".attack-btn").on("click", function() {
 		battle = new Battle();
-		console.log("tinyToon damage:", battle.getDamage(Battle.tinyToon));
-		console.log("animaniac damage:", battle.getDamage(Battle.animaniac));
+		let tinyToon = Battle.tinyToon;
+		let animaniac = Battle.animaniac;
+		battle.getDamage(tinyToon);
+		battle.getDamage(animaniac);
+		battle.fight(Battle.tinyToon, Battle.animaniac);
 	});
 
 });
 
 
 
-// console.log(Lists.AnimaniacsList);
-// console.log(Lists.TinyToonsList);
 
 
 
